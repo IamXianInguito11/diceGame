@@ -1,0 +1,275 @@
+/* ----------------------------------------------
+   General Body and Background Styles
+---------------------------------------------- */
+
+body {
+  background: linear-gradient(300deg, #000000, #bb0797, #ffcc00);
+  background-size: 180% 180%;
+  animation: gradient-animation 15s ease infinite;
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Keyframes for the animated gradient background */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ----------------------------------------------
+   Header Section Styles
+---------------------------------------------- */
+
+header {
+  background-color: white; /* White background for header */
+  padding: 5px;
+  display: flex; /* Use flexbox to align logo and title */
+  align-items: center; /* Vertically align items in the header */
+  justify-content: center; /* Horizontally center the header content */
+}
+
+header .logo {
+  height: 50px; /* Set height for the logo */
+  margin-right: 15px; /* Space between logo and text */
+}
+
+header h1 {
+  font-family: 'Lobster', cursive; /* Cursive font for header title */
+  font-size: 2rem; /* Font size for header title */
+  color: #6c1668; /* Purple color for the header title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove padding */
+}
+
+/* ----------------------------------------------
+   Main Content Container Styles
+---------------------------------------------- */
+
+.container {
+  width: 70%; /* Set the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0; /* Remove unnecessary padding */
+  text-align: center; /* Center text in the container */
+}
+
+/* ----------------------------------------------
+   Dice Section Styling
+---------------------------------------------- */
+
+.dice {
+  text-align: center; /* Center the text in each dice div */
+  display: inline-block; /* Allow dice to sit next to each other */
+  margin: 0; /* Remove margin around dice divs */
+}
+
+/* ----------------------------------------------
+   Main Heading Styling
+---------------------------------------------- */
+
+h1 {
+  margin: 30px; /* Margin for the main heading */
+  font-family: 'Lobster', cursive; /* Cursive font for the main heading */
+  text-shadow: 5px 0 #000000; /* Black text shadow for emphasis */
+  font-size: 8rem; /* Large font size for the main heading */
+  color: #fbff04; /* Bright yellow color for the main heading */
+}
+
+/* ----------------------------------------------
+   Refresh Me Text Styling
+---------------------------------------------- */
+
+.refresh-me {
+  margin: 30px; /* Margin for the "Refresh Me" text */
+  font-family: 'Lobster', cursive; /* Cursive font for "Refresh Me" */
+  text-shadow: 5px 0 #000000; /* Black text shadow for emphasis */
+  font-size: 5rem; /* Default font size for large screens */
+  color: #fbff04; /* Yellow color for "Refresh Me" */
+}
+
+/* ----------------------------------------------
+   Footer Section Styles
+---------------------------------------------- */
+
+footer {
+  margin-top: 5%; /* Margin on top for spacing from content */
+  color: #EEEEEE; /* Light gray color for footer text */
+  text-align: center; /* Center align footer text */
+  font-family: 'Indie Flower', cursive; /* Cursive font for footer */
+  padding: 10px;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+/* ----------------------------------------------
+   Media Queries for Responsiveness (Device Specific)
+---------------------------------------------- */
+
+/* For Samsung Galaxy S20 / Samsung Galaxy S8+ (width: 360px) */
+@media (max-width: 360px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 3.5rem; /* Adjust font size for Samsung Galaxy S20 / S8+ */
+  }
+}
+
+/* For Pixel 7 (width: 412px) */
+@media (max-width: 412px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 4.5rem; /* Adjust font size for Pixel 7 */
+  }
+}
+
+/* For iPhone 14 Pro Max (width: 430px) */
+@media (max-width: 430px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 4.5rem; /* Adjust font size for iPhone 14 Pro Max */
+  }
+}
+
+/* For iPhone 12 Pro (width: 390px) */
+@media (max-width: 390px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 4rem; /* Adjust font size for iPhone 12 Pro */
+  }
+}
+
+/* For iPhone XR (width: 414px) */
+@media (max-width: 414px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 4.5rem; /* Adjust font size for iPhone XR */
+  }
+}
+
+/* For iPhone SE (width: 320px) */
+@media (max-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 3.5rem; /* Adjust font size for iPhone SE */
+  }
+}
+
+/* For iPad Mini (width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .dice {
+    display: block; /* Stack the dice vertically */
+    margin: 10px 0; /* Space between the dice divs */
+  }
+
+  .refresh-me {
+    font-size: 5rem; /* Adjust font size for iPad Mini */
+  }
+}
+
+/* ----------------------------------------------
+   General Paragraph Styling
+---------------------------------------------- */
+
+p {
+  font-size: 2rem; /* Font size for paragraphs */
+  color: #fbff04; /* Yellow color for paragraph text */
+  font-family: 'Indie Flower', cursive; /* Cursive font for paragraphs */
+}
+
+/* ----------------------------------------------
+   Image Styling
+---------------------------------------------- */
+
+img {
+  width: 80%; /* Set image width to 80% of its container */
+}
+
+/* ----------------------------------------------
+   Styling the Clickable Container Link
+---------------------------------------------- */
+
+/* Ensures the container behaves like a clickable link */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit the color from the "Refresh Me" text */
+}
+
+/* Ensures the underline appears when hovering the link */
+a:hover {
+  text-decoration: underline; /* Show underline on hover */
+  color: #fbff04; /* Same color as "Refresh Me" text */
+}
